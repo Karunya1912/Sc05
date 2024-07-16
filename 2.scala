@@ -11,7 +11,7 @@ object library
     library.find(_.isbn==book.isbn) match{
         case Some(book)=>
             println("book is already exist")
-        case None=>
+        case None=>0
             library+=book
             println("book is added")
     }
