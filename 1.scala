@@ -5,7 +5,7 @@ object IMS
         val input = scala.io.StdIn.readLine("Enter product name (or type 'done' to finish): ")
         if (input.toLowerCase == "done") products
         else getProductList(products :+ input)
-    }
+    } 
 
     def printproductlist(products:List[String]):Unit={
         for(i<-products.indices){
